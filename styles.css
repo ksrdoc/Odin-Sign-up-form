@@ -1,0 +1,44 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+.background {
+  width: 40vw;
+  height: 100vh;
+}
+
+.backgroundContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 400px;
+  background-image: url(grianghraf-2VUEJvCHl44-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+main {
+  width: 80vw;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(196, 196, 196, 0.1);
+  height: 180px;
+  width: 100%;
+}
+
+.logo img {
+  width: 20%;
+  height: 50%;
+  margin-left: 10%;
+}
