@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "elite";
+  src: url(SpecialElite-Regular.ttf) format(truetype);
+}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -12,15 +17,16 @@
 .backgroundContent {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
-  gap: 400px;
+  gap: 640px;
   background-image: url(grianghraf-2VUEJvCHl44-unsplash.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   position: relative;
+  color: rgb(228, 188, 59);
 }
 
 main {
@@ -41,4 +47,21 @@ main {
   width: 20%;
   height: 50%;
   margin-left: 10%;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  font-family: "elite";
+  font-size: 3rem;
+}
+
+.logoMotto {
+  font-size: 2rem;
+}
+
+.authors {
+  margin-bottom: 10px;
 }
