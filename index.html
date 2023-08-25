@@ -45,28 +45,34 @@
           <form action="post" , id="form">
             <legend>Let's do this!</legend>
             <fieldset>
-              <div class="firstName">
-                <label for="firstName">FIRST NAME</label>
-                <input type="text" id="firstName" name="firstName" />
+              <div class="input">
+                <label for="firstName">FIRST NAME:</label>
+                <input type="text" id="firstName" name="firstName" required />
               </div>
-              <div class="lastName">
-                <label for="lastName">LAST NAME</label>
-                <input type="text" id="lastName" name="lastName" />
+              <div class="input">
+                <label for="lastName">LAST NAME:</label>
+                <input type="text" id="lastName" name="lastName" required />
               </div>
-              <div class="e-mail">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
+              <div class="input">
+                <label for="email">EMAIL:</label>
+                <input type="email" name="email" id="email" required />
               </div>
-              <div class="tel">
-                <label for="telephone">PHONE NUMBER</label>
-                <input type="tel" name="telephone" id="telephone" />
+              <div class="input">
+                <label for="telephone">PHONE NUMBER:</label>
+                <input
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  pattern="[0-9]+"
+                  required
+                />
               </div>
-              <div class="pass">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
+              <div class="input">
+                <label for="password">PASSWORD:</label>
+                <input type="password" name="password" id="password" required />
               </div>
-              <div class="confirm">
-                <label for="confirmPassword">CONFIRM PASSWORD</label>
+              <div class="input">
+                <label for="confirmPassword">CONFIRM PASSWORD:</label>
                 <input
                   type="password"
                   name="confirmPassword"
