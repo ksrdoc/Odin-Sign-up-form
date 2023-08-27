@@ -83,6 +83,7 @@ main {
   gap: 1rem;
   margin-left: 5vw;
   margin-top: 10vh;
+  margin-bottom: 3vh;
   font-family: "Special Elite", cursive;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -136,25 +137,29 @@ fieldset {
 
 input {
   background-color: antiquewhite;
+  border: 0.2rem solid green;
   box-sizing: border-box;
   box-shadow: 2px;
   width: 250px;
   height: 45px;
   border-radius: 10px;
-  font-size: 1.3rem;
-}
-
-input:focus {
-  border: 5px solid rgb(228, 188, 59);
-  box-shadow: 2px;
+  font-size: 1.4rem;
 }
 
 input:invalid {
-  border: 2px solid rgb(196, 1, 1);
+  border: 0.2rem solid rgb(196, 1, 1);
 }
 
-input:empty {
-  border: 3px solid rgb(24, 8, 61);
+input:focus {
+  border: 0.3rem solid rgb(228, 188, 59);
+  box-shadow: 2px;
+  transition: 0.1s;
+}
+
+input:hover {
+  border: 0.32rem solid rgb(228, 188, 59);
+  box-shadow: 2px;
+  transition: 0.1s;
 }
 
 .accountOptions {
@@ -170,7 +175,7 @@ input:empty {
   box-sizing: border-box;
   width: 30%;
   height: 50px;
-  background-color: rgb(2, 27, 61);
+  background-color: rgb(7, 58, 129);
   box-shadow: 3px;
   border: 2px solid rgb(219, 216, 214);
   border-radius: 10px;
@@ -179,7 +184,31 @@ input:empty {
   font-weight: bold;
 }
 
+#createAcc:hover {
+  border: 4px solid rgb(219, 216, 214);
+  background-color: rgb(9, 75, 167);
+  font-size: 1.35rem;
+  transition: 0s;
+}
+
+#createAcc:active {
+  color: rgb(228, 188, 59);
+}
+
 .accountOptions p {
   font-size: 1.5rem;
   color: whitesmoke;
+}
+
+#login {
+  font-size: 1.5rem;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(228, 188, 59);
+  text-decoration: underline;
+}
+
+#login:hover {
+  font-size: 1.6rem;
+  color: rgb(252, 218, 106);
+  transition: 0.3s;
 }
