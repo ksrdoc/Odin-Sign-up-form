@@ -3,8 +3,13 @@
   src: url(SpecialElite-Regular.ttf) format(truetype);
 }
 
+html {
+  background-color: rgb(12, 12, 12);
+}
 .content {
   display: flex;
+  height: 100%;
+  width: 100%;
   flex-direction: row;
   flex: auto;
   background-color: rgb(12, 12, 12);
@@ -46,6 +51,7 @@
   width: 20%;
   height: 50%;
   margin-left: 10%;
+  flex: auto;
 }
 
 .logoText {
@@ -78,6 +84,7 @@ main {
 }
 
 .dummyText {
+  height: 1fr;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -93,14 +100,16 @@ main {
 /*form styling*/
 
 .form {
-  height: 40vh;
+  height: 1fr;
   display: flex;
+  flex: auto;
   background-color: rgba(24, 31, 41, 0.493);
   margin-bottom: 5%;
 }
 
 form {
   display: flex;
+  flex: auto;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -120,6 +129,7 @@ legend {
 
 fieldset {
   font-size: 1.3rem;
+  flex: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -131,6 +141,7 @@ fieldset {
 
 .input {
   display: flex;
+  flex: auto;
   flex-direction: column;
   gap: 10px;
 }
@@ -167,6 +178,7 @@ input:hover {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  height: 1fr;
   margin-left: 5vw;
   margin-bottom: 100%;
 }
